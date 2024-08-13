@@ -1,4 +1,4 @@
-FROM golang:1.16 AS builder
+FROM golang:1.23 AS builder
 WORKDIR /opt/app-root/src
 COPY . .
 RUN go build -o bin/festoji main.go
